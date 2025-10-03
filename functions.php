@@ -1,42 +1,4 @@
-# wp-base-theme
-
-## Tailwind CSS セットアップ
-
-依存関係のインストール
-```bash
-npm install -D tailwindcss postcss autoprefixer
-```
-
-設定ファイルの生成
-```bash
-npx tailwindcss init
-```
-
-tailwind.config.jsを修正
-```javascript
-module.exports = {
-  content: ["./**/*.php"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-assets/css/tailwind.cssを作成
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-ビルドコマンドの実行
-```bash
-npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch
-```
-
-functions.phpで読み込み
-```php
+<?php
 function custombase_enqueue_assets()
 {
     // テーマのメインCSSの読み込み
@@ -65,9 +27,29 @@ function custombase_enqueue_assets()
     );
 }
 add_action('wp_enqueue_scripts', 'custombase_enqueue_assets');
-```
 
-.gitignore
-```
-node_modules/
-```
+// テーマサポート
+function custombase_theme_setup()
+{
+    // タイトルタグのサポート
+    add_theme_support('title-tag');
+    
+    // アイキャッチ画像のサポート
+    add_theme_support('post-thumbnails');
+    
+    // HTML5サポート
+    add_theme_support('html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ));
+    
+    // ナビゲーションメニューの登録
+    register_nav_menus(array(
+        'primary' => 'ヘッダーメニュー',
+        'footer' => 'フッターメニュー',
+    ));
+}
+add_action('after_setup_theme', 'custombase_theme_setup');
