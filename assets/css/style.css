@@ -588,8 +588,20 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .top-0 {
@@ -598,6 +610,10 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-2 {
@@ -721,6 +737,10 @@ video {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -741,6 +761,10 @@ video {
   width: 1.5rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -749,12 +773,28 @@ video {
   width: 100%;
 }
 
-.w-40 {
-  width: 10rem;
+.w-\[200px\] {
+  width: 200px;
 }
 
-.w-60 {
-  width: 15rem;
+.\!w-\[200px\] {
+  width: 200px !important;
+}
+
+.\!w-\[260px\] {
+  width: 260px !important;
+}
+
+.\!w-\[300px\] {
+  width: 300px !important;
+}
+
+.w-\[160px\] {
+  width: 160px;
+}
+
+.w-\[280px\] {
+  width: 280px;
 }
 
 .max-w-2xl {
@@ -781,6 +821,14 @@ video {
   max-width: none;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-\[280px\] {
+  max-width: 280px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -797,8 +845,16 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -939,6 +995,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -961,6 +1026,19 @@ video {
 
 .to-blue-800 {
   --tw-gradient-to: #1e40af var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1171,6 +1249,17 @@ video {
   transition-duration: 150ms;
 }
 
+/* body */
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+  background-image: url('../img/stripe-base.png');
+  background-repeat: repeat;
+  background-size: 20px 20px;
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1300,6 +1389,26 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:max-w-\[400px\] {
+    max-width: 400px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

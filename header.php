@@ -15,12 +15,12 @@
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <?php if (has_custom_logo()) : ?>
-                        <div class="mr-4 w-80">
+                        <div class="mr-4 w-[160px] lg:w-[280px]">
                             <?php the_custom_logo(home_url('/')); ?>
                         </div>
                     <?php else : ?>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition w-60">
-                            <?php bloginfo('name'); ?>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="mr-4 w-[160px] lg:w-[280px]">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_logo_02.png" alt="ロゴ" class="w-full h-auto block">
                         </a>
                     <?php endif; ?>
                 </div>

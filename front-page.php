@@ -1,22 +1,17 @@
 <?php get_header(); ?>
 
 <!-- ヒーローセクション -->
-<section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6">
-            <?php bloginfo('name'); ?>
-        </h1>
-        <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
-            <?php bloginfo('description'); ?>
-        </p>
-        <div class="flex justify-center space-x-4">
-            <a href="#latest-posts" class="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition">
-                最新記事を見る
-            </a>
-            <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="px-8 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition border border-blue-500">
-                すべての記事
-            </a>
+<section class="relative bg-center bg-cover text-gray-900 overflow-hidden"
+    style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids01.jpg'); ?>'); aspect-ratio: 2 / 1;">
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.0) 65%);"></div>
+    <div class="relative z-10 max-w-5xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-center items-start gap-4">
+        <div class="w-full max-w-[280px] lg:max-w-[400px]">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/children_mv_logo.png'); ?>"
+                alt="ロゴ" class="w-full h-auto block">
         </div>
+        <p class="text-2xl bg-white/70 px-4 py-2 rounded-lg font-bold text-gray-900">
+            子育てに役立つ情報を提供します
+        </p>
     </div>
 </section>
 

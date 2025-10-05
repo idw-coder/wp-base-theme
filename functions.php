@@ -1,6 +1,14 @@
 <?php
 function custombase_enqueue_assets()
 {
+    // Google Fonts の読み込み
+    wp_enqueue_style(
+        'custombase-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap',
+        array(),
+        null
+    );
+
     // テーマのメインCSSの読み込み
     wp_enqueue_style(
         'custombase-style',
@@ -17,6 +25,10 @@ function custombase_enqueue_assets()
         filemtime(get_template_directory() . '/assets/css/style.css')
     );
 
+    // フォントを全体に適用（Tailwind後に確実に反映）
+    $font_css = 'body { font-family: "Zen Maru Gothic", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }';
+    wp_add_inline_style('custombase-tailwind', $font_css);
+
     // JSの読み込み
     wp_enqueue_script(
         'custombase-script',
@@ -27,6 +39,14 @@ function custombase_enqueue_assets()
     );
 }
 add_action('wp_enqueue_scripts', 'custombase_enqueue_assets');
+
+// フォント最適化用の preconnect を <head> に追加
+function custombase_add_preconnect()
+{
+    echo "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n";
+    echo "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n";
+}
+add_action('wp_head', 'custombase_add_preconnect', 1);
 
 // テーマサポート
 function custombase_theme_setup()
