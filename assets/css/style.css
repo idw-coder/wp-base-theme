@@ -616,6 +616,10 @@ video {
   z-index: 50;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -723,10 +727,6 @@ video {
 
 .h-64 {
   height: 16rem;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .h-96 {
@@ -960,6 +960,10 @@ video {
   background-color: rgb(255 255 255 / 0.7);
 }
 
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -976,14 +980,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-top {
-  background-position: top;
-}
-
-.bg-bottom {
-  background-position: bottom;
 }
 
 .bg-\[center_90\%\] {
@@ -1061,12 +1057,25 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[37\.5\%\] {
+  padding-top: 37.5%;
+}
+
+.pt-\[27\.5\%\] {
+  padding-top: 27.5%;
 }
 
 .text-center {
@@ -1297,8 +1306,19 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:p-12 {
-    padding: 3rem;
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
