@@ -1,6 +1,6 @@
 </main><?php /** メインコンテンツ終了 */ ?>
 
-<footer class="bg-gray-900 text-white mt-16">
+<footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- サイト情報 -->
@@ -40,12 +40,13 @@
 <?php wp_footer(); ?>
 
 <script>
-// モバイルメニュートグル
-document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-});
+    // モバイルメニュートグル
+    document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
 </script>
 
 </body>
+
 </html>
