@@ -8,7 +8,7 @@
                 <?php the_post_thumbnail('full', array('class' => 'absolute inset-0 w-full h-full object-cover')); ?>
                 <div class="absolute inset-0 bg-white/60 z-10"></div>
                 <div class="absolute inset-0 z-20 flex items-center justify-center px-4">
-                    <h1 class="text-2xl md:text-4xl font-bold text-gray-900 text-center">
+                    <h1 class="text-2xl md:text-6xl font-bold text-ciel-red bg-white/60 rounded-lg px-8 py-4 text-center">
                         <?php the_title(); ?>
                     </h1>
                 </div>

@@ -76,3 +76,14 @@ function custombase_theme_setup()
     add_theme_support('custom-logo', array());
 }
 add_action('after_setup_theme', 'custombase_theme_setup');
+
+// カスタムロゴの画像にクラスを追加して、はみ出しを防ぐ
+function custombase_custom_logo_class($html)
+{
+    // imgタグにクラスを追加
+    $html = str_replace('class="custom-logo"', 'class="custom-logo max-h-full w-auto object-contain"', $html);
+    // aタグにもクラスを追加
+    $html = str_replace('class="custom-logo-link"', 'class="custom-logo-link flex items-center h-full"', $html);
+    return $html;
+}
+add_filter('get_custom_logo', 'custombase_custom_logo_class');

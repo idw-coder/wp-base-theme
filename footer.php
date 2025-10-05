@@ -6,7 +6,11 @@
             <!-- サイト情報 -->
             <div>
                 <h3 class="text-xl font-bold mb-4"><?php bloginfo('name'); ?></h3>
-                <p class="text-gray-400"><?php bloginfo('description'); ?></p>
+<!-- logo -->
+ <div class="w-[160px] lg:w-[280px] bg-white rounded-lg">
+    <?php the_custom_logo(home_url('/')); ?>
+</div>
+                
             </div>
 
             <!-- ナビゲーション -->

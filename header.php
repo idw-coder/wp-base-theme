@@ -15,11 +15,17 @@
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <?php if (has_custom_logo()) : ?>
-                        <div class="mr-4 w-[160px] lg:w-[280px]">
-                            <?php the_custom_logo(home_url('/')); ?>
+                        <div class="mr-4 h-[40px] lg:h-[80px]">
+                        <?php 
+        // カスタムロゴに適切なクラスを追加
+        add_filter('get_custom_logo', function($html) {
+            return str_replace('custom-logo-link', 'custom-logo-link h-full', $html);
+        });
+        the_custom_logo(); 
+        ?>
                         </div>
                     <?php else : ?>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="mr-4 w-[160px] lg:w-[280px]">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="mr-4 h-[40px] lg:h-[80px]">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_logo_02.png" alt="ロゴ" class="w-full h-auto block">
                         </a>
                     <?php endif; ?>
