@@ -7,7 +7,7 @@
             <div>
                 <h3 class="text-xl font-bold mb-4"><?php bloginfo('name'); ?></h3>
 <!-- logo -->
- <div class="w-[160px] lg:w-[280px] bg-white rounded-lg">
+ <div class="w-[100px] lg:w-[180px] bg-white rounded-lg">
     <?php the_custom_logo(home_url('/')); ?>
 </div>
                 
@@ -32,11 +32,19 @@
             <!-- その他情報 -->
             <div>
                 <h4 class="text-lg font-semibold mb-4">情報</h4>
-                <div class="text-gray-400 space-y-2">
-                    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-                    <p>All rights reserved.</p>
-                </div>
+                <ul>
+                    <li>住所：東京都千代田区永田町1-7-1</li>
+                    <li>電話：03-3264-5678</li>
+                    <li>メール：info@example.com</li>
+                </ul>
             </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <p class="text-center">
+                &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+            </p>
         </div>
     </div>
 </footer>
