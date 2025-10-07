@@ -2,7 +2,7 @@
 
 <!-- ヒーローセクション -->
 <section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden"
-    style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids01.jpg'); ?>'); aspect-ratio: 8 / 3;">
+    style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids_01.jpg'); ?>'); aspect-ratio: 8 / 3;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.0) 65%);"></div>
     <div class="relative z-10 max-w-5xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-center items-start gap-4">
         <div class="w-full max-w-[280px] lg:max-w-[400px]">
