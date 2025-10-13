@@ -12,10 +12,10 @@
 
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
+            <div class="flex justify-between items-center py-2">
                 <div class="flex items-center">
                     <?php if (has_custom_logo()) : ?>
-                        <div class="mr-4 h-[40px] lg:h-[80px]">
+                        <div class="mr-4 h-[40px] lg:h-[60px]">
                             <?php
                             // カスタムロゴに適切なクラスを追加
                             add_filter('get_custom_logo', function ($html) {
@@ -25,7 +25,7 @@
                             ?>
                         </div>
                     <?php else : ?>
-                        <div class="mr-4 h-[40px] lg:h-[80px]">
+                        <div class="mr-4 h-[40px] lg:h-[60px]">
                             <a href="<?php echo esc_url(home_url('/')); ?>" class="custom-logo-link h-full block">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_logo_02.png" alt="ロゴ" class="h-full w-auto block">
                             </a>

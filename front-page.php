@@ -1,107 +1,98 @@
 <?php get_header(); ?>
 
 <!-- ヒーローセクション -->
-<section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden"
+<section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden mb-24 flex px-20"
     style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids_01.jpg'); ?>'); aspect-ratio: 8 / 3;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.0) 65%);"></div>
-    <div class="relative z-10 max-w-5xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-center items-start gap-4">
-        <div class="w-full max-w-[280px] lg:max-w-[400px]">
+    <div class="z-10 max-w-5xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-center items-start gap-4">
+        <div class="w-full max-w-[280px] lg:max-w-[600px]">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/children_mv_logo.png'); ?>"
                 alt="ロゴ" class="w-full h-auto block">
         </div>
-        <p class="text-2xl bg-white/70 px-4 py-2 rounded-lg font-bold text-gray-900">
+        <p class="hidden text-2xl bg-white/70 px-4 py-2 rounded-lg font-bold text-gray-900">
             子育てに役立つ情報を提供します
         </p>
     </div>
 </section>
 
-<!-- 最新投稿セクション -->
-<section id="latest-posts" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">最新の投稿</h2>
-        <p class="text-gray-600">新しく公開された記事をチェック</p>
-    </div>
+<section class="section">
+    <h2 class="ribbon red">シエルの想い</h2>
+    <div class="white-box">
+        <p class="mb-4">発達ステーション シエルは「駅」のように、ここからスタートしたり、
+            ちょっと立ち止まったりする場所として、小千谷市に誕生しました。</p>
+        <p class="mb-4">「シエル」はフランス語で「空」。</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <?php
-        $latest_posts = new WP_Query(array(
-            'posts_per_page' => 6,
-            'post_status' => 'publish'
-        ));
+        <p class="mb-4">「若草物語」のお話をご存知の方も多いと思います。</p>
+        <p class="mb-4">「雲の向こうはいつも青空」（”There is always light behind the clouds”）は、
+            「若草物語」の作者ルイーザ・メイ・オルコットのことばといわれています。</p>
 
-        if ($latest_posts->have_posts()) :
-            while ($latest_posts->have_posts()) : $latest_posts->the_post();
-        ?>
+        <p class="mb-4">「雲の上に出れば青空があるように、目の前の困難を乗り越えれば、青空が待っている」
+            ということばは、わたしたちへの励ましのメッセージにも聞こえてきます。</p>
 
-                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                    <?php if (has_post_thumbnail()) : ?>
-                        <a href="<?php the_permalink(); ?>" class="block">
-                            <?php the_post_thumbnail('medium', array('class' => 'w-full h-48 object-cover')); ?>
-                        </a>
-                    <?php else : ?>
-                        <div class="w-full h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
-                    <?php endif; ?>
-
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-600 mb-3">
-                            <time datetime="<?php echo get_the_date('c'); ?>">
-                                <?php echo get_the_date(); ?>
-                            </time>
-                            <span class="mx-2">·</span>
-                            <span><?php echo get_the_category_list(', '); ?></span>
-                        </div>
-
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h3>
-
-                        <p class="text-gray-700 mb-4 line-clamp-3">
-                            <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
-                        </p>
-
-                        <a href="<?php the_permalink(); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
-                            続きを読む
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-        <?php
-            endwhile;
-            wp_reset_postdata();
-        endif;
-        ?>
-    </div>
-</section>
-
-<!-- カテゴリーセクション -->
-<section class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">カテゴリー</h2>
-            <p class="text-gray-600">興味のあるトピックを探す</p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <?php
-            $categories = get_categories(array(
-                'orderby' => 'count',
-                'order' => 'DESC',
-                'number' => 8
-            ));
-
-            foreach ($categories as $category) :
-            ?>
-                <a href="<?php echo get_category_link($category->term_id); ?>" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
-                    <h3 class="font-semibold text-gray-900 mb-2"><?php echo $category->name; ?></h3>
-                    <p class="text-sm text-gray-600"><?php echo $category->count; ?> 件の投稿</p>
-                </a>
-            <?php endforeach; ?>
+        <p class="mb-4">お子さんを育てていくうえで、いろいろな困り事や心配もあるかもしれません。</p>
+        <p>シエルは保護者さまや関係機関のみなさまとともに、お子さんの育ちを見守り、
+            支えていく存在でありたいと考えています。</p>
+        <div class="absolute w-[18%] bottom-[-100px] right-[-60px]">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_02.png'); ?>"
+                alt="シエルの役割" class="max-w-full w-full h-auto">
         </div>
     </div>
 </section>
+
+<section class="section">
+    <h2 class="ribbon blue">シエルの役割</h2>
+    <div class="white-box">
+        <p class="mb-4">シエルは児童福祉法に基づく児童発達支援・放課後等デイサービスの施設です。</p>
+        <p class="mb-4">発達上の凸凹や課題がある、またはその可能性のあるお子さんを対象としています。</p>
+        <p class="mb-4">お子さん一人ひとりの特性に応じ、お子さん本人への発達支援とともに、
+            ご家庭や通っている園や学校などと連携したサポートを行います。</p>
+        <div class="absolute w-[18%] bottom-[-100px] left-[-60px]">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_01.png'); ?>"
+                alt="シエルの役割" class="max-w-full w-full h-auto">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="ribbon yellow">シエルのサポートの特徴</h2>
+    <div class="white-box">
+        <p class="mb-4 font-bold text-xl">
+            <span style="background: linear-gradient(transparent 60%,rgb(255, 233, 203) 60%)">
+                <span class="text-4xl">1. </span>
+                エビデンス・ベースド・プラクティス（evidence-based-practice <EBD>）
+            </span>
+        </p>
+        <p class="mb-4">科学的根拠のある、効果を実証できる療育を提供します。</p>
+        <p class="mb-4">お子さんのサポートには「愛」や「想い」、「熱意」は不可欠です。
+            しかし、それだけでは専門職とは言えません。</p>
+        <p class="mb-4">シエルでは、ご契約の際、「Vineland-Ⅱ適応尺度」を用いて実態把握をし、
+            個別支援計画を作成します。</p>
+        <p class="mb-4">その他にも、必要に応じて公認心理師が各種アセスメントを行い、お子さんの苦手とする部分だけでなく、強みとなる部分を明らかにしたサポートに努めます。</p>
+
+        <p class="mb-4 font-bold text-xl">
+            <span style="background: linear-gradient(transparent 60%,rgb(255, 233, 203) 60%)">
+                <span class="text-4xl">2. </span>
+                １歳代からの早期療育＜児童発達支援＞
+            </span>
+        </p>
+        <p class="mb-4">シエルでは、数ある療育プログラムの中から１歳代から遊びをとおして取り組めるプログラムを取り入れています。
+            机上での学習ではなく、おもちゃを使って楽しみながら取り組むことで、コミュニケーションの基盤をつくることに重点をおいていきます。</p>
+        <p class="mb-4">（もし、療育の開始が遅くなったとしても「手遅れ」ということはありません。年齢や発達課題に応じた療育を行うことが可能ですのでご安心ください。）</p>
+
+        <p class="mb-4 font-bold text-xl">
+            <span style="background: linear-gradient(transparent 60%,rgb(255, 233, 203) 60%)">
+                <span class="text-4xl">3. </span>
+                社会性を培う「ソーシャルスキルトレーニング」と<br />
+                認知特性に合わせた学習支援＜放課後等デイサービス＞
+            </span>
+        </p>
+        <p class="mb-4">小集団活動は、「順番を守る」「話し合う」「ルールを決める」等のソーシャルスキルを習得する絶好の機会です。
+            お子さんが無理なくソーシャルスキルに触れ、「できるようになった！」という達成感をもてる場をつくります。</p>
+        <p class="mb-4">学習支援では、お子さんの認知特性に合わせた学習方法を取りいれます。
+            例えば「漢字が苦手」という状況では、「文字の形の見分けが難しい」「文字と音の対応がうまくいかない」「記憶することが難しい」などさまざまな要因があります。お子さんに合った学習方法を見つけ、学習への意欲につなげていきます。</p>
+
+    </div>
+</section>
+
+
 <?php get_footer(); ?>

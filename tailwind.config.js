@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'ciel': {
-          red: '#E66B6B',
-        }
+        'red1': '#E66B6B',
+        'sky1': '#E0F2FC',
+        'sky2': '#66C6DB',
+        'brown1': '#815B35',
+        'green1': '#68BA65',
       }
     },
   },
