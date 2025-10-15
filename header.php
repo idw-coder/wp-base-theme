@@ -14,23 +14,37 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-2">
                 <div class="flex items-center">
-                    <?php if (has_custom_logo()) : ?>
-                        <div class="mr-4 h-[40px] lg:h-[60px]">
-                            <?php
-                            // カスタムロゴに適切なクラスを追加
-                            add_filter('get_custom_logo', function ($html) {
-                                return str_replace('custom-logo-link', 'custom-logo-link h-full', $html);
-                            });
-                            the_custom_logo();
-                            ?>
-                        </div>
-                    <?php else : ?>
-                        <div class="mr-4 h-[40px] lg:h-[60px]">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="custom-logo-link h-full block">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_logo_02.png" alt="ロゴ" class="h-full w-auto block">
-                            </a>
-                        </div>
-                    <?php endif; ?>
+                    <div class="flex items-center gap-2">
+                        <?php if (has_custom_logo()) : ?>
+                            <div class="mr-4 h-[40px] lg:h-[60px]">
+                                <?php
+                                // カスタムロゴに適切なクラスを追加
+                                add_filter('get_custom_logo', function ($html) {
+                                    return str_replace('custom-logo-link', 'custom-logo-link h-full', $html);
+                                });
+                                the_custom_logo();
+                                ?>
+                            </div>
+                        <?php else : ?>
+                            <div class="mr-4 h-[40px] lg:h-[60px]">
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="custom-logo-link h-full block">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_logo_02.png" alt="ロゴ" class="h-full w-auto block">
+                                </a>
+                            </div>
+                        <?php endif; ?>
+                        <!-- キャッチフレーズ -->
+                        <?php if (get_bloginfo('description')) : ?>
+                            <p class="text-sm text-gray-500">
+                                <?php echo get_bloginfo('description'); ?>
+                            </p>
+                        <?php else : ?>
+                            <p class="text-sm text-gray-500">
+                                児童発達支援　放課後等デイサービス
+                                <br />保育所等訪問支援　特定・障害児相談支援
+                            </p>
+                        <?php endif; ?>
+
+                    </div>
                 </div>
 
                 <!-- ナビゲーション -->
