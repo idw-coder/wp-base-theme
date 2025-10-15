@@ -2,14 +2,14 @@
 
 <footer class="text-gray-900 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="flex justify-between gap-[90px] items-center">
+        <div class="flex justify-between gap-4 lg:gap-[90px] items-center lg:flex-row flex-col">
             <!-- logo -->
             <div class="w-[180px] lg:w-[280px]">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="ロゴ" class="w-full h-auto block">
             </div>
 
             <!-- ナビゲーション -->
-            <div class="flex-1 flex gap-[100px] text-brown1 justify-end">
+            <div class="flex-1 flex gap-[100px] text-brown1 justify-end flex-col lg:flex-row">
                 <div class="text-sm">
                     <dl class="space-y-1 mb-4">
                         <div class="flex gap-2">

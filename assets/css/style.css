@@ -702,6 +702,80 @@ video {
   border-right: 15px solid transparent;
 }
 
+@media (max-width: 1024px) {
+  .ribbon {
+    font-size: 1.25rem;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .ribbon::before,
+    .ribbon::after {
+    height: 30px;
+    border: 15px solid;
+  }
+
+  .ribbon.red::before,
+    .ribbon.blue::before,
+    .ribbon.yellow::before,
+    .ribbon.green1::before,
+    .ribbon.sky2::before,
+    .ribbon.purple1::before {
+    left: -20px;
+    border-left: 10px solid transparent;
+  }
+
+  .ribbon.red::after,
+    .ribbon.blue::after,
+    .ribbon.yellow::after,
+    .ribbon.green1::after,
+    .ribbon.sky2::after,
+    .ribbon.purple1::after {
+    right: -20px;
+    border-right: 10px solid transparent;
+  }
+}
+
+/* white-box内 左下に配置する共通クラス */
+
+.white-box-image-bottom-left {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 18%;
+}
+
+@media (min-width: 1024px) {
+  .white-box-image-bottom-left {
+    bottom: -100px;
+    left: -60px;
+  }
+}
+
+/* white-box内 右下に配置する共通クラス */
+
+.white-box-image-bottom-right {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 18%;
+}
+
+@media (min-width: 1024px) {
+  .white-box-image-bottom-right {
+    bottom: -100px;
+    right: -60px;
+  }
+}
+
+/* white-box内 画像の共通スタイル */
+
+.white-box-image__img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
 .white-box {
   position: relative;
   margin-left: auto;
@@ -714,6 +788,13 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: var(--color-brown1);
+}
+
+@media (max-width: 1024px) {
+  .white-box {
+    max-width: 90%;
+    padding: 1rem;
+  }
 }
 
 .absolute {
@@ -736,12 +817,20 @@ video {
   bottom: -100px;
 }
 
+.bottom-\[-20px\] {
+  bottom: -20px;
+}
+
 .bottom-\[-60px\] {
   bottom: -60px;
 }
 
 .left-\[-60px\] {
   left: -60px;
+}
+
+.right-\[-20px\] {
+  right: -20px;
 }
 
 .right-\[-60px\] {
@@ -777,16 +866,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-\[80\%\] {
-  margin-left: 80%;
-  margin-right: 80%;
-}
-
-.mx-\[60\%\] {
-  margin-left: 60%;
-  margin-right: 60%;
 }
 
 .mb-12 {
@@ -861,14 +940,6 @@ video {
   display: none;
 }
 
-.aspect-\[600\/450\] {
-  aspect-ratio: 600/450;
-}
-
-.aspect-\[4\/3\] {
-  aspect-ratio: 4/3;
-}
-
 .aspect-\[3\/1\] {
   aspect-ratio: 3/1;
 }
@@ -915,10 +986,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[450px\] {
-  height: 450px;
 }
 
 .max-h-full {
@@ -973,10 +1040,6 @@ video {
   width: 100%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .min-w-\[50\%\] {
   min-width: 50%;
 }
@@ -997,12 +1060,20 @@ video {
   max-width: 64rem;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
 
 .max-w-\[280px\] {
   max-width: 280px;
+}
+
+.max-w-\[60\%\] {
+  max-width: 60%;
 }
 
 .max-w-full {
@@ -1015,14 +1086,6 @@ video {
 
 .max-w-none {
   max-width: none;
-}
-
-.max-w-\[60\%\] {
-  max-width: 60%;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .flex-1 {
@@ -1085,10 +1148,6 @@ video {
   gap: 100px;
 }
 
-.gap-\[90px\] {
-  gap: 90px;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1145,10 +1204,6 @@ video {
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -1194,6 +1249,11 @@ video {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
@@ -1225,11 +1285,6 @@ video {
 
 .bg-white\/70 {
   background-color: rgb(255 255 255 / 0.7);
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cover {
@@ -1347,16 +1402,16 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
 
 .pt-\[22\.5\%\] {
   padding-top: 22.5%;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -1628,6 +1683,14 @@ body::before {
 }
 
 @media (min-width: 1024px) {
+  .lg\:bottom-\[-100px\] {
+    bottom: -100px;
+  }
+
+  .lg\:right-\[-60px\] {
+    right: -60px;
+  }
+
   .lg\:h-\[60px\] {
     height: 60px;
   }
@@ -1638,6 +1701,14 @@ body::before {
 
   .lg\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-\[90px\] {
+    gap: 90px;
   }
 
   .lg\:px-8 {

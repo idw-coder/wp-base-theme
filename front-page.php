@@ -32,9 +32,9 @@
         <p class="mb-4">お子さんを育てていくうえで、いろいろな困り事や心配もあるかもしれません。</p>
         <p>シエルは保護者さまや関係機関のみなさまとともに、お子さんの育ちを見守り、
             支えていく存在でありたいと考えています。</p>
-        <div class="absolute w-[18%] bottom-[-100px] right-[-60px]">
+        <div class="white-box-image-bottom-right">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_02.png'); ?>"
-                alt="シエルの役割" class="max-w-full w-full h-auto">
+                alt="シエルの役割" class="white-box-image__img">
         </div>
     </div>
 </section>
@@ -46,9 +46,9 @@
         <p class="mb-4">発達上の凸凹や課題がある、またはその可能性のあるお子さんを対象としています。</p>
         <p class="mb-4">お子さん一人ひとりの特性に応じ、お子さん本人への発達支援とともに、
             ご家庭や通っている園や学校などと連携したサポートを行います。</p>
-        <div class="absolute w-[18%] bottom-[-100px] left-[-60px]">
+        <div class="white-box-image-bottom-left">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_01.png'); ?>"
-                alt="シエルの役割" class="max-w-full w-full h-auto">
+                alt="シエルの役割" class="white-box-image__img">
         </div>
     </div>
 </section>
