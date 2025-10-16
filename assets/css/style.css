@@ -746,8 +746,18 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   padding: 3rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .white-box {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.white-box {
   color: var(--color-brown1);
 }
 
@@ -973,16 +983,12 @@ video {
   aspect-ratio: 8 / 5;
 }
 
-.aspect-\[3\/1\] {
-  aspect-ratio: 3/1;
-}
-
-.aspect-\[16\/9\] {
-  aspect-ratio: 16/9;
-}
-
 .aspect-\[2\/1\] {
   aspect-ratio: 2/1;
+}
+
+.aspect-\[3\/1\] {
+  aspect-ratio: 3/1;
 }
 
 .h-32 {
@@ -1141,8 +1147,20 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1429,6 +1447,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1494,6 +1517,16 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1748,6 +1781,10 @@ body::before {
     width: 240px;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:min-w-\[50\%\] {
     min-width: 50%;
   }
@@ -1766,6 +1803,18 @@ body::before {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:px-10 {
@@ -1788,16 +1837,17 @@ body::before {
     padding-bottom: 3rem;
   }
 
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
 
   .md\:text-center {
     text-align: center;
-  }
-
-  .md\:text-right {
-    text-align: right;
   }
 
   .md\:text-4xl {
@@ -1818,6 +1868,11 @@ body::before {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

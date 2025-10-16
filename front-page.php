@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- ヒーローセクション -->
-<section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden mb-4 md:mb-24 flex px-20 aspect-8/5 md:aspect-8/3"
+<section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden mb-4 md:mb-24 flex px-4 md:px-20 aspect-8/5 md:aspect-8/3"
     style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids_01.jpg'); ?>');">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.0) 65%);"></div>
     <div class="z-10 max-w-5xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-center items-start gap-4">
@@ -57,7 +57,7 @@
     <section class="section">
         <h2 class="ribbon yellow">シエルのサポートの特徴</h2>
         <div class="white-box">
-            <p class="mb-4 font-bold text-xl">
+            <p class="mb-4 font-bold text-lg md:text-2xl">
                 <span style="background: linear-gradient(transparent 60%,rgb(255, 233, 203) 60%)">
                     <span class="text-4xl">1. </span>
                     エビデンス・ベースド・プラクティス（evidence-based-practice <EBD>）
@@ -70,7 +70,7 @@
                 個別支援計画を作成します。</p>
             <p class="mb-4">その他にも、必要に応じて公認心理師が各種アセスメントを行い、お子さんの苦手とする部分だけでなく、強みとなる部分を明らかにしたサポートに努めます。</p>
 
-            <p class="mb-4 font-bold text-xl">
+            <p class="mb-4 font-bold text-lg md:text-2xl">
                 <span style="background: linear-gradient(transparent 60%,rgb(255, 233, 203) 60%)">
                     <span class="text-4xl">2. </span>
                     １歳代からの早期療育＜児童発達支援＞
@@ -80,7 +80,7 @@
                 机上での学習ではなく、おもちゃを使って楽しみながら取り組むことで、コミュニケーションの基盤をつくることに重点をおいていきます。</p>
             <p class="mb-4">（もし、療育の開始が遅くなったとしても「手遅れ」ということはありません。年齢や発達課題に応じた療育を行うことが可能ですのでご安心ください。）</p>
 
-            <p class="mb-4 font-bold text-xl">
+            <p class="mb-4 font-bold text-lg md:text-2xl">
                 <span style="background: linear-gradient(transparent 60%,rgb(255, 233, 203) 60%)">
                     <span class="text-4xl">3. </span>
                     社会性を培う「ソーシャルスキルトレーニング」と<br />

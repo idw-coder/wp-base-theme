@@ -159,7 +159,7 @@ body::before {
   }
 
   .white-box {
-    @apply bg-white rounded-lg text-lg p-12 max-w-[900px] mx-auto relative;
+    @apply bg-white rounded-lg text-base md:text-lg p-12 max-w-[900px] mx-auto relative;
     color: var(--color-brown1);
   }
   
@@ -169,7 +169,7 @@ body::before {
       padding: 1rem;
     }
   }
-  
+
   /* white-box内 左下に配置する共通クラス */
   .white-box-image-bottom-left {
     @apply absolute w-[28%] bottom-[-70px] left-[-10px];
