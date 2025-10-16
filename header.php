@@ -14,7 +14,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-2">
                 <div class="flex items-center">
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center flex-col md:flex-row gap-2">
                         <?php if (has_custom_logo()) : ?>
                             <div class="mr-4 h-[40px] lg:h-[60px]">
                                 <?php
@@ -38,9 +38,9 @@
                                 <?php echo get_bloginfo('description'); ?>
                             </p>
                         <?php else : ?>
-                            <p class="text-sm text-gray-500">
-                                児童発達支援　放課後等デイサービス
-                                <br />保育所等訪問支援　特定・障害児相談支援
+                            <p class="text-[10px] text-gray-500">
+                                児童発達支援　放課後等デイサービス<br />
+                                保育所等訪問支援　特定・障害児相談支援
                             </p>
                         <?php endif; ?>
 

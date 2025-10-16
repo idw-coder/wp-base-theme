@@ -9,7 +9,7 @@
             </div>
 
             <!-- ナビゲーション -->
-            <div class="flex-1 flex gap-[100px] text-brown1 justify-end flex-col lg:flex-row">
+            <div class="flex-1 flex gap-8 lg:gap-[100px] text-brown1 justify-end flex-col lg:flex-row">
                 <div class="text-sm">
                     <dl class="space-y-1 mb-4">
                         <div class="flex gap-2">

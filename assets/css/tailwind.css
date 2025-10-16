@@ -10,6 +10,7 @@
   --color-blue1: #0083C4;
   --color-yellow1: #F4A944;
   --color-brown1: #815b35;
+  --color-brown2: #f7e1ca;
   --color-purple1: #937fba;
   --color-green1: #68BA65;
 }
@@ -43,12 +44,13 @@ body::before {
     @apply py-12;
   }
   .ribbon {
-    @apply relative text-white text-2xl font-bold mx-auto px-4 mb-16;
+    @apply relative text-white text-2xl font-bold mx-auto px-4;
     height: 60px;
     line-height: 60px;
     display: table;
     text-align: center;
     letter-spacing: 0.05em;
+    margin-bottom: 4rem;
   }
   .ribbon::before,
   .ribbon::after {
@@ -129,6 +131,7 @@ body::before {
       font-size: 1.25rem;
       height: 30px;
       line-height: 30px;
+      margin-bottom: 2rem;
     }
     .ribbon::before,
     .ribbon::after {
@@ -187,8 +190,16 @@ body::before {
   
   @media (max-width: 1024px) {
     .white-box {
-      max-width: 90%;
+      max-width: 100%;
       padding: 1rem;
     }
+  }
+
+  /* planページ */
+  .plan-heading-02 {
+    @apply text-center table mx-auto border-2 border-blue-950 bg-blue-100/60 text-blue-950 px-4 py-2 font-bold text-lg mb-8;
+  }
+  .plan-heading-03 {
+    @apply flex items-center justify-center gap-2 bg-blue-50 text-blue-950 rounded-md px-4 py-2 font-bold text-base lg:text-lg mb-4;
   }
 }

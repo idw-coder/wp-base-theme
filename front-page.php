@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <!-- ヒーローセクション -->
-<section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden mb-24 flex px-20"
-    style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids_01.jpg'); ?>'); aspect-ratio: 8 / 3;">
+<section class="relative bg-[center_90%] bg-cover text-gray-900 overflow-hidden mb-4 md:mb-24 flex px-20 aspect-8/5 md:aspect-8/3"
+    style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/img/kids_01.jpg'); ?>');">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.0) 65%);"></div>
     <div class="z-10 max-w-5xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-center items-start gap-4">
         <div class="w-full max-w-[280px] lg:max-w-[600px]">
@@ -15,6 +15,7 @@
     </div>
 </section>
 
+<div class="px-4 md:px-8 py-4 md:py-12">
 <section class="section">
     <h2 class="ribbon red">シエルの想い</h2>
     <div class="white-box">
@@ -93,6 +94,6 @@
 
     </div>
 </section>
-
+</div>
 
 <?php get_footer(); ?>
