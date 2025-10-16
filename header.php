@@ -56,7 +56,7 @@
                         'menu_class' => 'flex space-x-8',
                         'fallback_cb' => false,
                         'items_wrap' => '<ul class="%2$s">%3$s</ul>',
-                        'link_before' => '<span class="text-gray-700 hover:text-blue-600 transition">',
+                        'link_before' => '<span class="text-gray-700 hover:text-blue-600 transition-colors duration-200 ease-out">',
                         'link_after' => '</span>',
                     ));
                     ?>
@@ -64,22 +64,22 @@
 
                 <!-- モバイルメニューボタン -->
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="text-red1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
 
             <!-- モバイルメニュー -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div id="mobile-menu" class="hidden md:hidden text-center -mx-4 sm:-mx-6 lg:-mx-8">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
                     'container' => false,
-                    'menu_class' => 'space-y-2',
+                    'menu_class' => 'bg-sky1/60',
                     'fallback_cb' => false,
-                    'items_wrap' => '<ul class="%2$s">%3$s</ul>',
-                    'link_before' => '<span class="block py-2 text-gray-700 hover:text-blue-600 transition">',
+                    // 'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+                    'link_before' => '<span class="block w-full px-4 sm:px-6 lg:px-8 py-2 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200 ease-out">',
                     'link_after' => '</span>',
                 ));
                 ?>
