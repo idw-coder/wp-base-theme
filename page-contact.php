@@ -41,7 +41,7 @@
                         <span class="bg-white px-4 relative">営業時間</span>
                     </p>
                     <p class="text-center mb-8">営業時間 9:00〜18:00<br class="md:hidden">（サービス提供時間 9:30〜17:30）</p>
-                    <div class="max-w-md mx-auto">
+                    <div class="max-w-md mx-auto mb-8">
                         <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
                             <div>営業日</div>
                             <div>月曜〜金曜</div>
@@ -58,6 +58,10 @@
                             <div>夏季休業</div>
                             <div>8/13～8/15</div>
                         </div>
+                    </div>
+                    <div class="aspect-[2/1] rounded-lg overflow-hidden">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/IMG_4937.jpeg'); ?>"
+                            alt="アクセスマップ" class="w-full h-full object-cover">
                     </div>
                 </div>
             </section>

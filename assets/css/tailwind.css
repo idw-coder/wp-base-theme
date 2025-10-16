@@ -158,6 +158,18 @@ body::before {
     }
   }
 
+  .white-box {
+    @apply bg-white rounded-lg text-lg p-12 max-w-[900px] mx-auto relative;
+    color: var(--color-brown1);
+  }
+  
+  @media (max-width: 1024px) {
+    .white-box {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  
   /* white-box内 左下に配置する共通クラス */
   .white-box-image-bottom-left {
     @apply absolute w-[28%] bottom-[-70px] left-[-10px];
@@ -181,18 +193,6 @@ body::before {
   /* white-box内 画像の共通スタイル */
   .white-box-image__img {
     @apply max-w-full w-full h-auto;
-  }
-
-  .white-box {
-    @apply bg-white rounded-lg text-lg p-12 max-w-[900px] mx-auto relative;
-    color: var(--color-brown1);
-  }
-  
-  @media (max-width: 1024px) {
-    .white-box {
-      max-width: 100%;
-      padding: 1rem;
-    }
   }
 
   /* planページ */

@@ -39,12 +39,16 @@
                             <dd class="text-sm text-center md:text-left md:text-base">原則として小千谷市在住の方</dd>
                         </div>
                     </dl>
+                    <div class="white-box-image-bottom-left">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_02.png'); ?>"
+                            alt="1日の流れ" class="white-box-image__img">
+                    </div>
                 </div>
             </section>
 
             <section class="section">
                 <h2 class="ribbon red">1日の流れ</h2>
-                <div class="white-box mb-24 text-sm">
+                <div class="white-box md:mb-36 mb-24 text-sm">
                     <p class="font-bold text-2xl text-red1 text-center mb-4 md:mb-12">＜児童発達支援＞<br class="md:hidden">（モデルケース）</p>
                     <p class="text-center font-bold text-xl relative mb-8">
                         <span style="position: absolute; content: ''; top: 50%; left: 0; width: 100%; height: 2px; background-color:rgb(215, 190, 163);"></span>
@@ -78,11 +82,11 @@
                         <div class="font-bold">16:00</div>
                         <div class="flex-shrink-0 min-w-[70%] md:min-w-[50%]">お送り（ご自宅）<br class="md:hidden">または保護者送迎</div>
                     </div>
-                    <p class="md:text-right text-center">＊利用時間は保護者さまと<br class="md:hidden">相談のうえ決定します。</p>
+                    <p class="text-center mb-8">＊利用時間は保護者さまと<br class="md:hidden">相談のうえ決定します。</p>
 
-                    <div class="white-box-image-bottom-left">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_02.png'); ?>"
-                            alt="1日の流れ" class="white-box-image__img">
+                    <div class="aspect-[2/1] rounded-lg overflow-hidden">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/IMG_4435.JPEG'); ?>"
+                            alt="児童発達支援の1日の流れ" class="w-full h-full object-cover">
                     </div>
                 </div>
 
