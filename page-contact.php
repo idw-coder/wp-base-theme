@@ -7,7 +7,7 @@
         <div class="px-4 md:px-8 py-8 md:py-12">
             <section class="section">
                 <h2 class="ribbon red">お問い合わせ先情報</h2>
-                <div class="white-box">
+                <div class="white-box mb-8">
                     <div class="max-w-md mx-auto mb-8">
                         <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
                             <dt class="font-bold">住所</dt>
@@ -68,23 +68,29 @@
 
             <section>
                 <h2 class="ribbon blue">会社概要</h2>
-                <div class="white-box">
-                    <p>会社概要</p>
-                    運営会社：合同会社リエゾン
-                    本社所在地：新潟県見附市柳橋町２８８番地１９
-                    設立：2024年4月3日
-                    代表社員：宇賀田和雄
-                    業務執行社員：宇賀田真理
-                </div>
-                <div>
-                    １．施設の電話番号
-                    　　0258-89-8202
-                    ２．支援プログラム・自己評価表のページ
-                    　　・ボタン「支援プログラム」「自己評価表」の位置を入れ替え（左側が「支援プログラム」）
-                    　　・「支援プログラム」のページに「児童発達支援」「放課後等デイサービス」2枚を掲載）
-                    　　・「自己評価表」のページ「2025年度末に評価表をこちらに掲載します」のみ記入
-                    ３．「支援プログラム」PDFに誤字がありました。差し替えをお願いします。
-                    ４．「運営会社」を追加（テキストデータ参照） （ 問い合わせのページがよいでしょうか。）
+                <div class="white-box mb-8">
+                    <div class="max-w-xl mx-auto">
+                        <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
+                            <div class="font-bold">運営会社</div>
+                            <div>合同会社リエゾン</div>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
+                            <div class="font-bold">本社所在地</div>
+                            <div>新潟県見附市柳橋町２８８番地１９</div>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
+                            <div class="font-bold">設立</div>
+                            <div>2024年4月3日</div>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
+                            <div class="font-bold">代表社員</div>
+                            <div>宇賀田和雄</div>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
+                            <div class="font-bold">業務執行社員</div>
+                            <div>宇賀田真理</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

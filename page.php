@@ -6,7 +6,9 @@
 
         <div class="px-4 md:px-8 py-8 md:py-12">
             <div class="prose max-w-none">
-                <?php the_content(); ?>
+                <div class="white-box">
+                    <?php the_content(); ?>
+                </div>
             </div>
 
             <?php
