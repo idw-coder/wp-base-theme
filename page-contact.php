@@ -15,11 +15,11 @@
                         </div>
                         <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
                             <dt class="font-bold">TEL</dt>
-                            <dd>025-89-8202</dd>
+                            <dd>0258-89-8202</dd>
                         </div>
                         <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
                             <dt class="font-bold">FAX</dt>
-                            <dd>025-89-8203</dd>
+                            <dd>0258-89-8203</dd>
                         </div>
                         <div class="flex justify-between border-b border-gray-200 pb-2 mb-2">
                             <dt class="font-bold">メール</dt>
@@ -66,8 +66,30 @@
                 </div>
             </section>
 
+            <section>
+                <h2 class="ribbon blue">会社概要</h2>
+                <div class="white-box">
+                    <p>会社概要</p>
+                    運営会社：合同会社リエゾン
+                    本社所在地：新潟県見附市柳橋町２８８番地１９
+                    設立：2024年4月3日
+                    代表社員：宇賀田和雄
+                    業務執行社員：宇賀田真理
+                </div>
+                <div>
+                    １．施設の電話番号
+                    　　0258-89-8202
+                    ２．支援プログラム・自己評価表のページ
+                    　　・ボタン「支援プログラム」「自己評価表」の位置を入れ替え（左側が「支援プログラム」）
+                    　　・「支援プログラム」のページに「児童発達支援」「放課後等デイサービス」2枚を掲載）
+                    　　・「自己評価表」のページ「2025年度末に評価表をこちらに掲載します」のみ記入
+                    ３．「支援プログラム」PDFに誤字がありました。差し替えをお願いします。
+                    ４．「運営会社」を追加（テキストデータ参照） （ 問い合わせのページがよいでしょうか。）
+                </div>
+            </section>
+
             <section class="section">
-                <h2 class="ribbon red">アクセスマップ</h2>
+                <h2 class="ribbon yellow">アクセスマップ</h2>
                 <div class="white-box text-center">
                     <div class="max-w-[100%] md:max-w-[60%] mx-auto border-2 border-gray-200 pb-8 mb-8">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map.png" alt="アクセスマップ" class="w-full h-auto">

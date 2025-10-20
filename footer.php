@@ -18,11 +18,11 @@
                         </div>
                         <div class="flex flex-col md:flex-row md:gap-2">
                             <dt class="w-[60px] font-bold md:text-base text-sm">TEL</dt>
-                            <dd>025-89-8202</dd>
+                            <dd>0258-89-8202</dd>
                         </div>
                         <div class="flex flex-col md:flex-row md:gap-2">
                             <dt class="w-[60px] font-bold md:text-base text-sm">FAX</dt>
-                            <dd>025-89-8203</dd>
+                            <dd>0258-89-8203</dd>
                         </div>
                         <div class="flex flex-col md:flex-row md:gap-2">
                             <dt class="w-[60px] font-bold md:text-base text-sm">メール</dt>
