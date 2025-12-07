@@ -38,93 +38,154 @@ get_header(); ?>
 
             <section class="section mb-12">
                 <h2 class="ribbon blue">サービス利用までの流れ</h2>
-                <div class="white-box !p-4 md:!p-8">
-                    <div class="white-box-image-bottom-right">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_03.png'); ?>"
-                            alt="サービス利用までの流れ" class="white-box-image__img">
-                    </div>
-                    
+                <div class="white-box !px-4 md:!px-8 !py-20 md:!py-24">
                     <div class="flow-chart max-w-xl mx-auto">
                         
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">1. 申請</p>
-                            <p class="text-sm">お住まいの市町村の福祉窓口にてサービスの利用申請をします。</p>
+                        <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">01</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-file-alt text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">申請</p>
+                                <p class="text-sm">お住まいの市町村の福祉窓口にてサービスの利用申請をします。</p>
+                            </div>
                         </div>
                         
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
 
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">2. 契約</p>
-                            <p class="text-sm">計画相談支援の利用規約を当事業所と行います。</p>
+                        <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">02</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-handshake text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">契約</p>
+                                <p class="text-sm">計画相談支援の利用規約を当事業所と行います。</p>
+                            </div>
                         </div>
                         
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
 
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">3. 初回面談・アセスメント</p>
-                            <p class="text-sm">障害のある方、そのご家族のこれまでの生活についての聴き取りや、どのようなサービスや生活を希望されているかの確認を行います。</p>
+                        <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">03</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-comments text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">初回面談・アセスメント</p>
+                                <p class="text-sm">障害のある方、そのご家族のこれまでの生活についての聴き取りや、どのようなサービスや生活を希望されているかの確認を行います。</p>
+                            </div>
                         </div>
                         
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
 
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">4. サービス等利用計画案の作成・同意</p>
-                            <p class="text-sm">相談支援専門員がアセスメントの内容をもとに、サービス等利用計画案の作成を行います。<br />
-                                作成しましたらご本人、ご家族に内容の確認を頂き、お住いの市町村へ提出いたします。</p>
+                            <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">04</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-clipboard-list text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">サービス等利用計画案の作成・同意</p>
+                                <p class="text-sm">相談支援専門員がアセスメントの内容をもとに、サービス等利用計画案の作成を行います。<br />
+                                    作成しましたらご本人、ご家族に内容の確認を頂き、お住いの市町村へ提出いたします。</p>
+                            </div>
                         </div>
                         
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
 
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">5. 支給決定</p>
-                            <p class="text-sm">市町村より、計画案の内容でサービスの利用できるよう、支給決定を受けます。</p>
+                        <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">05</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-stamp text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">支給決定</p>
+                                <p class="text-sm">市町村より、計画案の内容でサービスの利用できるよう、支給決定を受けます。</p>
+                            </div>
                         </div>
 
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
 
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">6. サービス担当者会議</p>
-                            <p class="text-sm">希望されるサービス事業所の担当者が集まり、サービスの利用について話し合いをします。</p>
+                        <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">06</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-users text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">サービス担当者会議</p>
+                                <p class="text-sm">希望されるサービス事業所の担当者が集まり、サービスの利用について話し合いをします。</p>
+                            </div>
                         </div>
 
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">7. サービス等利用計画（本計画）の同意・提出</p>
-                            <p class="text-sm">サービス担当者会議の内容をもとに、変更点などを確認し、正式な計画書をご本人、ご家族の同意のもとに市区町村に提出します。</p>
+                        <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-8 md:pt-10">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">07</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-file-signature text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">サービス等利用計画（本計画）の同意・提出</p>
+                                <p class="text-sm">サービス担当者会議の内容をもとに、変更点などを確認し、正式な計画書をご本人、ご家族の同意のもとに市区町村に提出します。</p>
+                            </div>
                         </div>
 
-                        <div class="flex justify-center my-4">
-                            <svg class="w-6 h-8" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0L12 24M12 24L6 18M12 24L18 18" stroke="#0083C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="flex justify-center mb-4 md:mb-6 relative">
+                            <div class="w-0.5 h-12 md:h-16 bg-blue1"></div>
                         </div>
-                        <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                                <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">8. サービスの利用開始</p>
-                            <p class="text-sm">サービス利用契約を行い、サービス開始。開始後も継続的にモニタリングを行います。</p>
+                            <div class="relative p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md flex gap-4 items-center pt-6 md:pt-8">
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue1 border-2 border-blue1 flex items-center justify-center shadow-md">
+                                    <span class="text-lg md:text-xl font-bold text-white">08</span>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center md:mt-6">
+                                <i class="fas fa-play-circle text-blue1 text-2xl md:text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">サービスの利用開始</p>
+                                <p class="text-sm">サービス利用契約を行い、サービス開始。開始後も継続的にモニタリングを行います。</p>
+                            </div>
                         </div>
 
                     </div>
