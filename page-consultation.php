@@ -39,10 +39,6 @@ get_header(); ?>
             <section class="section mb-12">
                 <h2 class="ribbon blue">サービス利用までの流れ</h2>
                 <div class="white-box !p-4 md:!p-8">
-                    <div class="white-box-image-top-left">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_02.png'); ?>"
-                            alt="サービス利用までの流れ" class="white-box-image__img">
-                    </div>
                     <div class="white-box-image-bottom-right">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/circle_image_03.png'); ?>"
                             alt="サービス利用までの流れ" class="white-box-image__img">
