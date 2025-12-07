@@ -190,6 +190,16 @@ body::before {
     }
   }
 
+  /* white-box内 左上に配置する共通クラス */
+  .white-box-image-top-left {
+    @apply absolute w-[28%] top-[-70px] left-[-10px];
+  }
+  @media (min-width: 1024px) {
+    .white-box-image-top-left {
+      @apply w-[18%] top-[-100px] left-[-60px];
+    }
+  }
+
   /* white-box内 画像の共通スタイル */
   .white-box-image__img {
     @apply max-w-full w-full h-auto;

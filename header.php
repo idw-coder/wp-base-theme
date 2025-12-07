@@ -48,7 +48,7 @@
                 </div>
 
                 <!-- ナビゲーション -->
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden md:flex space-x-2 text-[13px]">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'primary',
