@@ -16,7 +16,7 @@ get_header(); ?>
                     <p class="mb-8">「障害者総合支援法」（児童福祉法）に基づいた相談支援事業所です。<br />
                     ご本人の年齢に関係なくご利用いただけます。（療育手帳、障害者手帳の有無は問いません）</p>
 
-                    <p class="text-2xl font-bold text-red1 text-center mb-4">「サービス等利用計画」「障害児支援利用計画」を作成します。</p>
+                    <p class="text-xl md:text-2xl font-bold text-red1 text-center mb-4 tracking-wider">「サービス等利用計画」「障害児支援利用計画」を作成します。</p>
 
                     <p class="mb-4">「障害児通所支援（児童発達支援・放課後等デイサービス等）」（児童）や「就労支援や自立訓練等の障害福祉サービス」（成人）を利用する際には、原則として相談支援事業所が作成するサービス利用計画が必要です。</p>
 
@@ -47,7 +47,7 @@ get_header(); ?>
                     <div class="flow-chart max-w-xl mx-auto">
                         
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">1. 申請</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">1. 申請</p>
                             <p class="text-sm">お住まいの市町村の福祉窓口にてサービスの利用申請をします。</p>
                         </div>
                         
@@ -58,7 +58,7 @@ get_header(); ?>
                         </div>
 
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">2. 契約</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">2. 契約</p>
                             <p class="text-sm">計画相談支援の利用規約を当事業所と行います。</p>
                         </div>
                         
@@ -69,7 +69,7 @@ get_header(); ?>
                         </div>
 
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">3. 初回面談・アセスメント</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">3. 初回面談・アセスメント</p>
                             <p class="text-sm">障害のある方、そのご家族のこれまでの生活についての聴き取りや、どのようなサービスや生活を希望されているかの確認を行います。</p>
                         </div>
                         
@@ -80,7 +80,7 @@ get_header(); ?>
                         </div>
 
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">4. サービス等利用計画案の作成・同意</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">4. サービス等利用計画案の作成・同意</p>
                             <p class="text-sm">相談支援専門員がアセスメントの内容をもとに、サービス等利用計画案の作成を行います。<br />
                                 作成しましたらご本人、ご家族に内容の確認を頂き、お住いの市町村へ提出いたします。</p>
                         </div>
@@ -92,7 +92,7 @@ get_header(); ?>
                         </div>
 
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">5. 支給決定</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">5. 支給決定</p>
                             <p class="text-sm">市町村より、計画案の内容でサービスの利用できるよう、支給決定を受けます。</p>
                         </div>
 
@@ -103,7 +103,7 @@ get_header(); ?>
                         </div>
 
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">6. サービス担当者会議</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">6. サービス担当者会議</p>
                             <p class="text-sm">希望されるサービス事業所の担当者が集まり、サービスの利用について話し合いをします。</p>
                         </div>
 
@@ -113,7 +113,7 @@ get_header(); ?>
                             </svg>
                         </div>
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">7. サービス等利用計画（本計画）の同意・提出</p>
+                            <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">7. サービス等利用計画（本計画）の同意・提出</p>
                             <p class="text-sm">サービス担当者会議の内容をもとに、変更点などを確認し、正式な計画書をご本人、ご家族の同意のもとに市区町村に提出します。</p>
                         </div>
 
@@ -123,7 +123,7 @@ get_header(); ?>
                             </svg>
                         </div>
                         <div class="p-4 bg-sky1 rounded-lg border-2 border-blue1 shadow-md">
-                            <p class="text-2xl font-black text-blue1 mb-4 text-center">8. サービスの利用開始</p>
+                                <p class="text-xl md:text-2xl font-bold bg-blue1 text-white px-4 py-2 rounded-lg mb-4 text-center">8. サービスの利用開始</p>
                             <p class="text-sm">サービス利用契約を行い、サービス開始。開始後も継続的にモニタリングを行います。</p>
                         </div>
 
