@@ -12,8 +12,9 @@ get_header(); ?>
         <div class="px-4 md:px-8 py-8 md:py-12">
             
             <section class="section mb-12">
+            <h2 class="ribbon blue">相談支援事業所シエルとは</h2>
                 <div class="white-box">
-                    <p class="mb-8">「障害者総合支援法」（児童福祉法）に基づいた相談支援事業所です。<br />
+                    <p class="mb-8">「障害者総合支援法」（児童福祉法）に基づいた特定･障害児相談支援事業所です。<br />
                     ご本人の年齢に関係なくご利用いただけます。（療育手帳、障害者手帳の有無は問いません）</p>
 
                     <p class="text-xl md:text-2xl font-bold text-red1 text-center mb-8 tracking-wider">「サービス等利用計画」「障害児支援利用計画」を作成します。</p>
@@ -71,7 +72,7 @@ get_header(); ?>
                             </div>
                             <div class="flex-1 pt-6">
                                 <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">契約</p>
-                                <p class="text-sm">計画相談支援の利用規約を当事業所と行います。</p>
+                                <p class="text-sm">計画相談支援の利用契約を当事業所と行います。</p>
                             </div>
                         </div>
                         
@@ -129,7 +130,7 @@ get_header(); ?>
                             </div>
                             <div class="flex-1 pt-6">
                                 <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">支給決定</p>
-                                <p class="text-sm">市町村より、計画案の内容でサービスの利用できるよう、支給決定を受けます。</p>
+                                <p class="text-sm">市町村より、計画案の内容でサービスの利用ができるよう、支給決定を受けます。</p>
                             </div>
                         </div>
 
@@ -148,7 +149,7 @@ get_header(); ?>
                             </div>
                             <div class="flex-1 pt-6">
                                 <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">サービス担当者会議</p>
-                                <p class="text-sm">希望されるサービス事業所の担当者が集まり、サービスの利用について話し合いをします。</p>
+                                <p class="text-sm">希望されるサービス提供事業所の担当者が集まり、サービスの利用について話し合いをします。</p>
                             </div>
                         </div>
 
@@ -184,7 +185,7 @@ get_header(); ?>
                             </div>
                             <div class="flex-1 pt-6">
                                 <p class="text-lg md:text-xl font-bold text-gray-800 pb-2 border-b border-gray-300 mb-2">サービスの利用開始</p>
-                                <p class="text-sm">支給決定の内容に合わせて、サービス事業者と契約し、サービスの利用開始となります。<br />
+                                <p class="text-sm">支給決定の内容に合わせて、サービス提供事業所と契約し、サービスの利用開始となります。<br />
                                     利用されてからは、定期的に見直し（モニタリング）を行い、適切にサービスが利用されているか、生活状況に変化はないかなどの確認を行います。</p>
                             </div>
                         </div>
